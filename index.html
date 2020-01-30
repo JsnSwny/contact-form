@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700&display=swap" rel="stylesheet">
+    <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+</head>
+<body>
+    <nav style="background-color: rgba(0,0,0,0.3);" class="fixed w-full">
+        <div class="flex justify-between items-center w-3/5 mx-auto text-white font-normal py-5 text-xl">
+            <a onclick='changeColour("yellow")' class="cursor-pointer hover:text-gray-400">Yellow</a>
+            <a onclick='changeColour("blue")' class="cursor-pointer hover:text-gray-400">Blue</a>
+            <a onclick='changeColour("purple")' class="cursor-pointer hover:text-gray-400">Purple</a>
+            <a onclick='changeColour("green")' class="cursor-pointer hover:text-gray-400">Green</a>
+        </div>
+    </nav>
+    <div class="contact-bg flex justify-center items-center">
+        <div style="height: 80%; border-radius: 15px;" class="mt-10 contact-form w-3/5 text-white flex">
+            <div class="w-3/5 flex flex-col justify-center items-center h-full">
+                <h1 class="font-bold text-5xl mb-8"><span class="font-thin">Contact</span> Me</h1>
+                <label for="name" class="w-1/2">Name</label>
+                <input class="contact-input focus:outline-none w-1/2 mt-2" type="text" name="name" autocomplete="off" />
+                <label for="email" class="mt-8 w-1/2">Email</label>
+                <input class="contact-input focus:outline-none w-1/2 mt-2" type="email" name="email" autocomplete="off" />
+                <label for="message" class="mt-8 w-1/2">Message</label>
+                <textarea class="contact-input focus:outline-none w-1/2 mt-2" type="text" name="message"></textarea>
+                <button style="background-color: rgba(231, 195, 104, 0.8); border-radius: 30px;" class="contact-btn mt-8 py-3 w-3/12">Submit</button>
+            </div>
+            <div style="width: 2px; height: 60%; align-self: center;" class="bg-white">
+            </div>
+            <div style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); border-top-right-radius: 15px; border-bottom-right-radius: 15px;" class="w-2/5 h-full flex flex-col justify-center">
+                <div style="height: 60%;" class="w-4/5 ml-10 relative">
+                    <div class="flex items-center">
+                        <span style="width: 50px; color: rgba(247, 193, 144, 0.8);"><i class="fas fa-map-marker-alt fa-2x mr-6 icon"></i></span> 
+                        <h1 class="text-lg" >1 Fake Road, City, Country</h1class="text-lg">
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <span style="width: 50px; color: rgba(247, 193, 144, 0.8);"><i class="fas fa-envelope fa-2x mr-6 icon"></i></span> 
+                        <h1 class="text-lg">contact@example.com</h1>
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <span style="width: 50px; color: rgba(247, 193, 144, 0.8);"><i class="fas fa-phone fa-2x mr-6 icon"></i></span> 
+                        <h1 class="text-lg">01234 567890</h1>
+                    </div>
+                    <div class="flex items-center mt-8 absolute bottom-0">
+                        <i style="color: rgba(247, 193, 144, 0.8);" class="fab fa-facebook fa-3x cursor-pointer icon"></i>
+                        <i style="color: rgba(247, 193, 144, 0.8);" class="fab fa-twitter-square fa-3x ml-6 cursor-pointer icon"></i>
+                        <i style="color: rgba(247, 193, 144, 0.8);" class="fab fa-linkedin fa-3x ml-6 cursor-pointer icon"></i>
+                        <i style="color: rgba(247, 193, 144, 0.8);" class="fab fa-google-plus-square fa-3x ml-6 cursor-pointer icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeColour(colour) {
+            let icons = [...document.querySelectorAll(".icon")]
+            if (colour == "yellow") {
+                document.querySelector(".contact-bg").style.backgroundImage = 'linear-gradient(rgba(207, 175, 105, 0.85), rgba(0, 0, 0, 0.9)), url("images/landscape-2.jpeg")';
+                document.querySelector(".contact-form").style.backgroundImage = 'linear-gradient(rgba(207, 175, 105, 0.85), rgba(0, 0, 0, 0.9)), url("../images/landscape-2.jpeg")';
+                document.querySelector(".contact-btn").style.backgroundColor = 'rgba(231, 195, 104, 0.8)'
+                icons.filter((icon) => icon.style.color = 'rgba(247, 193, 144, 0.8)');
+                //.style.color = 'rgba(247, 193, 144, 0.8)';
+            } else if (colour == "blue") {
+                document.querySelector(".contact-bg").style.backgroundImage = 'linear-gradient(rgba(64, 161, 252, 0.85), rgba(0, 0, 0, 0.9)), url("../images/landscape-2.jpeg")';
+                document.querySelector(".contact-form").style.backgroundImage = 'linear-gradient(rgba(127, 162, 238, 0.8), rgba(19, 18, 7, 0.9)), url("../images/landscape-2.jpeg")';
+                document.querySelector(".contact-btn").style.backgroundColor = 'rgba(70, 83, 201, 0.8)';
+                icons.filter((icon) => icon.style.color = 'rgba(157, 210, 235, 0.8)');
+            } else if (colour == "purple") {
+                document.querySelector(".contact-bg").style.backgroundImage = 'linear-gradient(rgba(114, 49, 134, 0.85), rgba(0, 0, 0, 0.9)), url("../images/landscape-2.jpeg")';
+                document.querySelector(".contact-form").style.backgroundImage = 'linear-gradient(rgba(138, 84, 182, 0.8), rgba(19, 18, 7, 0.9)), url("../images/landscape-2.jpeg")';
+                document.querySelector(".contact-btn").style.backgroundColor = 'rgba(126, 44, 180, 0.8)';
+                icons.filter((icon) => icon.style.color = 'rgba(222, 164, 240, 0.8)');
+            } else if (colour == "green") {
+                document.querySelector(".contact-bg").style.backgroundImage = 'linear-gradient(rgba(49, 134, 53, 0.85), rgba(0, 0, 0, 0.9)), url("../images/landscape-2.jpeg")';
+                document.querySelector(".contact-form").style.backgroundImage = 'linear-gradient(rgba(84, 182, 92, 0.8), rgba(19, 18, 7, 0.9)), url("../images/landscape-2.jpeg")';
+                document.querySelector(".contact-btn").style.backgroundColor = 'rgba(71, 180, 44, 0.8)';
+                icons.filter((icon) => icon.style.color = 'rgba(164, 240, 168, 0.8)');
+            }
+        }
+    </script>
+</body>
+</html>
