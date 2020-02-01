@@ -8,7 +8,7 @@ changeColour("207, 175, 105, 0.85", "231, 195, 104, 0.8", "247, 193, 144, 0.8");
 
 function changeColour(backgroundColour, btnColour, iconColour) {
   let icons = [...document.querySelectorAll(".icon")];
-  document.querySelector(".contact-bg").style.backgroundImage =
+  document.querySelector("body").style.backgroundImage =
     "linear-gradient(rgba(" +
     backgroundColour +
     '), rgba(0, 0, 0, 0.9)), url("images/landscape-2.jpeg")';
