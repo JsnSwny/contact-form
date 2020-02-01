@@ -88,7 +88,7 @@ body {
     );
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    @apply w-2/5 h-full;
+    @apply w-1/2 h-full;
   }
   .form-control {
     @apply flex flex-col justify-center w-1/2;
