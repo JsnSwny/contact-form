@@ -674,7 +674,7 @@ body {
           flex-direction: column;
   -webkit-box-pack: center;
           justify-content: center;
-  width: 66.666667%;
+  width: 75%;
 }
 
 .form-control input,
@@ -715,8 +715,9 @@ body {
   visibility: hidden;
 }
 
-.contact-bg button {
-  box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.68);
+.contact-btn {
+  box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.68);
+  border-radius: 15px;
 }
 
 /* Large (lg) */
@@ -759,6 +760,10 @@ body {
     -webkit-box-pack: center;
             justify-content: center;
     width: 41.666667%;
+  }
+
+  .contact-bg button {
+    border-radius: 30px;
   }
 
   body {
