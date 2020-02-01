@@ -24,8 +24,7 @@ function changeColour(backgroundColour, btnColour, iconColour) {
 // Show input error message
 function showError(input, message) {
   const formControl = input.parentElement;
-  formControl.className =
-    "form-control flex flex-col justify-center w-5/12 relative error";
+  formControl.className = "form-control error";
   const small = formControl.querySelector("small");
   small.innerText = message;
 }
@@ -33,8 +32,7 @@ function showError(input, message) {
 // Show success outline
 function showSuccess(input) {
   const formControl = input.parentElement;
-  formControl.className =
-    "form-control flex flex-col justify-center w-5/12 relative success";
+  formControl.className = "form-control success";
 }
 
 // Check required fields
