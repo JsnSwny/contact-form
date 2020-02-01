@@ -19,6 +19,8 @@ function changeColour(backgroundColour, btnColour, iconColour) {
   document.querySelector(".contact-btn").style.backgroundColor =
     "rgba(" + btnColour + ")";
   icons.filter(icon => (icon.style.color = "rgba(" + iconColour + ")"));
+  document.querySelector(".info-line").style.backgroundColor =
+    "rgba(" + iconColour + ")";
 }
 
 // Show input error message

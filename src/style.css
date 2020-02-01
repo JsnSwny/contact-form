@@ -2,6 +2,10 @@
 
 @tailwind components;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Raleway";
   margin: 0;
@@ -78,7 +82,7 @@ body {
 /* Large (lg) */
 @media (min-width: 1024px) {
   .contact-form {
-    @apply mt-10 text-white flex mb-0 pb-0 pt-0;
+    @apply mt-10 text-white flex mb-0 py-20;
   }
   .info-bg {
     background-image: linear-gradient(
@@ -91,7 +95,7 @@ body {
     @apply w-1/2 h-full;
   }
   .form-control {
-    @apply flex flex-col justify-center w-1/2;
+    @apply flex flex-col justify-center w-3/5;
   }
   .contact-bg button {
     border-radius: 30px;

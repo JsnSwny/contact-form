@@ -627,6 +627,10 @@ video {
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Raleway";
   margin: 0;
@@ -729,8 +733,8 @@ body {
     display: -webkit-box;
     display: flex;
     margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .info-bg {
@@ -759,7 +763,7 @@ body {
             flex-direction: column;
     -webkit-box-pack: center;
             justify-content: center;
-    width: 50%;
+    width: 60%;
   }
 
   .contact-bg button {

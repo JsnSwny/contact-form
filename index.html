@@ -21,7 +21,10 @@
     </script>
   </head>
   <body>
-    <nav style="background-color: rgba(0,0,0,0.3);" class="fixed w-full top-0">
+    <nav
+      style="background-color: rgba(0,0,0,0.5);"
+      class="fixed w-full top-0 z-50"
+    >
       <div
         class="flex justify-between items-center w-11/12 lg:w-3/5 mx-auto text-white font-normal py-5 text-xl"
       >
@@ -48,8 +51,8 @@
       </div>
     </nav>
     <div
-      style="height: 80%; border-radius: 15px;"
-      class="contact-form lg:w-4/5 xl:w-3/5"
+      style="border-radius: 15px;"
+      class="contact-form lg:w-4/5 xl:w-3/5 relative"
     >
       <div
         class="w-full lg:w-1/2 flex flex-col justify-center items-center h-full"
@@ -92,40 +95,46 @@
           </button>
         </form>
       </div>
-      <div
-        style="width: 2px; height: 60%; align-self: center;"
-        class="bg-white"
-      ></div>
-      <div class="info-bg">
+
+      <div class="info-bg lg:absolute top-0 right-0">
         <div
           style="height: 60%;"
-          class="lg:w-4/5 w-9/12 flex flex-col items-start lg:ml-10 lg:relative mx-auto lg-mx-0 mt-10 lg:mt-0"
+          class="lg:w-4/5 w-9/12 flex flex-col items-start lg:ml-10 lg:relative mx-auto lg-mx-0 mt-10 lg:mt-0 relative"
         >
-          <div class="flex items-center">
-            <span style="width: 50px;"
-              ><i class="fas fa-map-marker-alt fa-2x mr-6 icon"></i
-            ></span>
-            <h1 class="text-base xl:text-lg">1 Fake Road, City, Country</h1>
-          </div>
-          <div class="flex items-center mt-8">
-            <span style="width: 50px;"
-              ><i class="fas fa-envelope fa-2x mr-6 icon"></i
-            ></span>
-            <h1 class="text-base xl:text-lg">contact@example.com</h1>
-          </div>
-          <div class="flex items-center mt-8">
-            <span style="width: 50px;"
-              ><i class="fas fa-phone fa-2x mr-6 icon"></i
-            ></span>
-            <h1 class="text-base xl:text-lg">01234 567890</h1>
-          </div>
-          <div class="flex items-center mt-8 lg:absolute lg:bottom-0">
-            <i class="fab fa-facebook fa-3x cursor-pointer icon"></i>
-            <i class="fab fa-twitter-square fa-3x ml-6 cursor-pointer icon"></i>
-            <i class="fab fa-linkedin fa-3x ml-6 cursor-pointer icon"></i>
-            <i
-              class="fab fa-google-plus-square fa-3x ml-6 cursor-pointer icon"
-            ></i>
+          <div
+            style="width: 2px; height: 100%; align-self: start;"
+            class="info-line absolute"
+          ></div>
+
+          <div class="ml-8">
+            <div class="flex items-center">
+              <span style="width: 50px;"
+                ><i class="fas fa-map-marker-alt fa-2x mr-6 icon"></i
+              ></span>
+              <h1 class="text-base xl:text-lg">1 Fake Road, City, Country</h1>
+            </div>
+            <div class="flex items-center mt-8">
+              <span style="width: 50px;"
+                ><i class="fas fa-envelope fa-2x mr-6 icon"></i
+              ></span>
+              <h1 class="text-base xl:text-lg">contact@example.com</h1>
+            </div>
+            <div class="flex items-center mt-8">
+              <span style="width: 50px;"
+                ><i class="fas fa-phone fa-2x mr-6 icon"></i
+              ></span>
+              <h1 class="text-base xl:text-lg">01234 567890</h1>
+            </div>
+            <div class="flex items-center mt-8 lg:absolute lg:bottom-0">
+              <i class="fab fa-facebook fa-3x cursor-pointer icon"></i>
+              <i
+                class="fab fa-twitter-square fa-3x ml-6 cursor-pointer icon"
+              ></i>
+              <i class="fab fa-linkedin fa-3x ml-6 cursor-pointer icon"></i>
+              <i
+                class="fab fa-google-plus-square fa-3x ml-6 cursor-pointer icon"
+              ></i>
+            </div>
           </div>
         </div>
       </div>
