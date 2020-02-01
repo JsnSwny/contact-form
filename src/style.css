@@ -91,7 +91,7 @@ body {
     @apply w-2/5 h-full;
   }
   .form-control {
-    @apply flex flex-col justify-center w-5/12;
+    @apply flex flex-col justify-center w-1/2;
   }
   .contact-bg button {
     border-radius: 30px;

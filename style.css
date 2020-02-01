@@ -759,7 +759,7 @@ body {
             flex-direction: column;
     -webkit-box-pack: center;
             justify-content: center;
-    width: 41.666667%;
+    width: 50%;
   }
 
   .contact-bg button {
